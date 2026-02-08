@@ -82,3 +82,13 @@ Tests use Vitest with jsdom environment, `@testing-library/react`, and `@vitejs/
 ## Environment
 
 `ANTHROPIC_API_KEY` in `.env` — optional, app works without it using mock AI responses.
+
+## Context Control Shortcuts
+
+For bigger or complex tasks, remind the user about these shortcuts:
+
+- **Escape** — Interrupt Claude to redirect or correct it. Also useful to fix issues with memories.
+- **Double-tap Escape** — Rewind the conversation to an earlier point in time. Maintains valuable context.
+- **/compact** — Summarize the conversation and continue. Helps Claude stay focused but remember what it has learned in the current session.
+- **/clear** — Dumps current conversation history. Useful when switching between different tasks.
+- **# (comment)** — Add a memory/instruction that gets saved to CLAUDE.md. Use this to teach Claude preferences, patterns, or corrections that persist across sessions.
